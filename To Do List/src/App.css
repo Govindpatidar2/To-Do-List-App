@@ -1,0 +1,94 @@
+body{
+  background-color:rgba(36, 126, 148, 0.785);
+}
+.main-box{
+  display: flex;
+  height: 140vh;
+  justify-content: center;
+  align-items: center;
+}
+.center-box{
+  height: 700px;
+  width: 400px;
+}
+.main{
+  background-color: black;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+  padding: 10px;
+  color: white;  
+  margin-bottom: 30px;
+  padding-left: 45px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+.input{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.input-box-todo{
+  border-radius: 10px;
+  border:2px solid black;
+  font-weight: 700;
+  padding-left: 10px;  
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.554);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+.btn{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border:none;
+  background: linear-gradient(rgb(94, 135, 224),blue);
+  color: black;
+  font-weight: 800;
+  font-size:20px;
+  margin-left: 10px;  
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+  transition: 0.3s;
+}
+.btn:active{
+  box-shadow: none;
+}
+.list-container{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.items{
+  list-style-type: none;
+  border:2px solid white;
+  background-color: rgb(14, 131, 233);
+  color:black;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  padding:5px;
+  padding-left: 5px;
+  border-radius: 10px; 
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+.icons{
+  position: absolute;
+  right: 10px;
+}
+.icons i{
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;   
+}
+.icons i:hover{
+  transform: scale(1.2);  
+}
+.icon-delete:hover{
+  color: red;
+}
