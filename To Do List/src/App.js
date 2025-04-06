@@ -16,9 +16,15 @@ const App = () => {
     }
   }
   const deleteListItem=(key)=>{
-    let newListTodo=[...listTodo];
+    let isconfirm = window.confirm("Are you sure you want to delete this task?");
+    if(isconfirm){
+      let newListTodo=[...listTodo];
     newListTodo.splice(key,1)
     setListTodo([...newListTodo])
+    }
+    else{
+      console.log("delete task cancelled")
+    }
   }
   return (
    <>
